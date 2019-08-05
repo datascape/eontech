@@ -1,0 +1,8 @@
+Source:
+
+https://blogs.msdn.microsoft.com/eternalcoding/2013/10/07/understanding-deviceorientation-events-by-creating-a-small-3d-game-with-babylon-js/
+
+
+Default Universal Camera = FreeCamera + TouchCamera + GamepadCamera
+
+http://doc.babylonjs.com/tutorials/05._Cameras

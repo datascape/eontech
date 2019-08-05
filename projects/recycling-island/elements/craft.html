@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>plasmaCraft - Elemental Physics for Minecraft</title>
+        <link rel="stylesheet" type="text/css" href="css/jquery.pte.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+        <script src="js/jquery.pte.min.js"></script>
+
+        <style type='text/css'>
+            body { margin: 0 20px 0 20px;}
+            html { color: #fff; }
+            h1 { color: #fff;}
+        </style>
+
+    </head>
+    <body style="background:#000">
+        
+        <img src="img/mockup.jpg" style="width:100%;" /><br><br><br><br>
+
+        <h2>Design Elements...</h2>
+
+        <div style="position:relative; height:740px">
+            <div id="my_periodic"></div>
+            <div id="my_periodic_detail"></div>
+        </div>
+
+        
+
+        <hr>
+        <br><br><br><br><br><br>
+        TO DO: Create 10 different block patterns with a 6 color pallet.<br>
+        We will apply colored blocks to the regions indicated below.<br><br><br>
+
+        
+        <img src="img/chart.jpg" style="width:100%;max-width:800px" />
+        <br><br><br>
+        <a href="./" style="color:#fff">PlasmaCraft</a><br><br><br>
+
+
+
+        <script>
+            function my_function(element){
+                var detail = '';
+                for( x in element) {
+                    if(typeof(element[x])=='object'){
+                        detail += x + ' : ' + element[x].VALUE + ' ' + element[x].UNIT + '\n';
+                    } else {
+                        detail += x + ' : ' + element[x] + '\n';
+                    }
+                }
+                alert(detail);
+            }
+            $('#my_periodic').pte({ data : 'json/jquery.pte.txt', config : {size:52,spacing:8}, clickHandler : my_function });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+    <title>Space Pods - Space to Earth Delivery: BabylonJS 3D Models</title>
+
+    <script type="text/javascript" src="https://cdn.babylonjs.com/cannon.js"></script>
+    <script type="text/javascript" src="https://cdn.babylonjs.com/babylon.js"></script>
+    <link href="../css/lads.css" rel="stylesheet" type="text/css" >
+</head>
+
+<body>
+<div id="pageTitle">
+    <b><a href="../">Space PODs</a></b>&nbsp; &nbsp;
+    <a href="../delivery/">Planetary Delivery</a>&nbsp; &nbsp;
+    <a href="../rescue/">Solar System Rescue</a>&nbsp; &nbsp;
+    Deep Space Exploration&nbsp; &nbsp;
+    <a href="http://Space Pods - Space to Earth Delivery.com" target="_parent" style="float:right; color:#ccc">Home</a>
+</div>
+
+<canvas id="renderCanvas"></canvas>
+
+<script>
+    var canvas = document.getElementById("renderCanvas");
+    var engine = new BABYLON.Engine(canvas, true);
+
+    var createScene = function () {
+
+        var scene = new BABYLON.Scene(engine);
+
+
+        //Adding a light
+
+        var light = new BABYLON.PointLight("Omni", new BABYLON.Vector3(20, 20, 100), scene);
+
+
+        // Create an ArcRotateCamera aimed at 0,0,0, with no alpha, beta or radius, so be careful. It will look broken.
+        var camera = new BABYLON.ArcRotateCamera("ArcRotateCamera", 0, 0, 0, BABYLON.Vector3.Zero(), scene);
+        // Quick, let's use the setPosition() method... with a common Vector3 position, to make our camera better aimed.
+        camera.setPosition(new BABYLON.Vector3(0, -200, 1000));
+
+        
+
+        // The first parameter can be used to specify which mesh to import. Here we import all
+        var internalMesh;
+        BABYLON.SceneLoader.ImportMesh("", "../", "sse.babylon", scene, function (newMeshes, particleSystems) {
+
+        });
+
+        //camera.attachControl(canvas, false);
+        camera.attachControl(canvas, false, true);
+
+        // Move the light with the camera
+
+        scene.registerBeforeRender(function () {
+            light.position = camera.position;
+
+        });
+
+
+        // Skybox - was 100.0, increased to 10000.0 to allow for zooming out
+        var skybox = BABYLON.Mesh.CreateBox("skyBox", 10000.0, scene);
+        var skyboxMaterial = new BABYLON.StandardMaterial("skyBox", scene);
+        skyboxMaterial.backFaceCulling = false;
+        skyboxMaterial.reflectionTexture = new BABYLON.CubeTexture("../exploration/sky34/skybox", scene);
+        skyboxMaterial.reflectionTexture.coordinatesMode = BABYLON.Texture.SKYBOX_MODE;
+        skyboxMaterial.diffuseColor = new BABYLON.Color3(0, 0, 0);
+        skyboxMaterial.specularColor = new BABYLON.Color3(0, 0, 0);
+        skyboxMaterial.disableLighting = true;
+        skybox.material = skyboxMaterial;
+
+
+        return scene;
+
+    }
+    var scene = createScene();
+
+    // RENDER LOOP
+    engine.runRenderLoop(function () {
+
+        scene.activeCamera.alpha -= .003;
+        scene.render();
+        
+    });
+
+
+    // Resize
+
+    window.addEventListener("resize", function () {
+
+        engine.resize();
+
+    });
+
+</script>
+
+</body>
+
+</html>

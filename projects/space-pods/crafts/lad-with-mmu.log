@@ -1,0 +1,22 @@
+	Exporter version: 4.4.1, Blender version: 2.76 (sub 0)
+========= Conversion from Blender to Babylon.js =========
+	Scene settings used:
+		selected layers only:  false
+		flat shading entire scene:  false
+		inline textures:  false
+		texture directory:  /Users/Loren/Sites/design/lads/3D/crafts/
+	Python World class constructor completed
+	processing begun of mesh:  Whole Lad
+		WARNING: No materials have been assigned: 
+		num positions      :  24962
+		num normals        :  24962
+		num uvs            :  0
+		num uvs2           :  0
+		num colors         :  0
+		num indices        :  151470
+	processing begun of camera (FreeCamera):  Camera
+	processing begun of light (POINT):  Lamp
+========= Writing of scene file started =========
+========= Writing of scene file completed =========
+========= end of processing =========
+elapsed time:  0 min, 1.017 secs

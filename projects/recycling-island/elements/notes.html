@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ 	<meta charset="utf-8">
+ 	<meta http-equiv="Content-Type" content="text/html;">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>PlasmaCraft - Elemental Science for Minecraft</title>
+	<link href="../css/base.css" media="screen" rel="stylesheet" type="text/css" >
+	<link rel="stylesheet" href="../fonts/entypo/entypo.css"  id="style-resource-2">
+	<link href="../css/kickstarter.css" media="screen" rel="stylesheet" type="text/css" >
+
+	<link rel="stylesheet" type="text/css" href="css/jquery.pte.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="js/jquery.pte.min.js"></script>
+</head>
+
+<body style="margin:0px">
+
+<div class="container">
+	<div class="main-content">
+
+		<div class="main">
+
+			<h1>MinecraftElements.com</h1>
+
+			
+			<!--
+
+			We're looking for partners to help kickstart MinecraftElements - 
+			a molecular chemistry module to allow game players to build real world bonds.
+
+		    <h3>An overview of Minecraft mods with elements:</h3>
+
+		    <p>
+
+			    <a href="http://wiki.industrial-craft.net/index.php?title=Main_Page">Industrial Craft 2 (IC2)</a> - added copper, tin, uranium and iridium<br>
+			     <a href="http://thermalexpansion.wikispaces.com/">Thermal Expansion</a> - added copper, tin, silver and lead<br>
+			      <a href="http://tinkers-construct.wikia.com/wiki/Tinkers'_Construct_Wiki">Tinkers' Construct</a> - added aluminum and cobalt<br>
+
+			      
+
+				Advanced Chemistry Mod
+				https://www.youtube.com/watch?v=MfO4UdXR9Yk
+				http://www.games-utilities.com/advanced-chemistry-minecraft/
+
+				MineChem
+			      http://www.minecraftdl.com/minechem-the-chemistry-mod/
+
+					Non-metals
+					https://play.google.com/store/apps/details?id=com.Mobifactoria.Periodic
+
+					http://www.ggshow.com/jquery-periodic-table-of-elements/
+
+					Minecraft blocks:
+					http://cdn2.worldofminecraft.com/images/wom_block_names.png
+
+					http://minecraft.gamepedia.com/Category:Blocks
+			  	   -->
+			  	   <br>
+
+			  	   <h2>PlasmaCraft - Compound Crafting Table</h2>
+
+			  	   <img src="img/molecules/hydrocarbon-ethane.gif" /><br><br>
+			  	   <a href="http://www.school-for-champions.com/chemistry/hydrocarbon_bonding.htm#.U2g8L-aXuWk">Hydrocarbon Bonding</a><br><br>
+
+			  	  
+
+			  	   <img src="img/molecules/syngas-diagram.png" /><br><br>
+			  	   <img src="img/molecules/fuels-from-syngas.png" /><br><br>
+
+			  	   <h3>SynGas Molecular Struture</h3>
+			  	   <iframe width="350" height="197" src="//www.youtube.com/embed/sVE0Ap7DAKA" frameborder="0" allowfullscreen></iframe>
+		    </p>
+			
+			<div style="position:relative; min-height:600px">
+	            <div id="my_periodic"></div>
+	            <div id="my_periodic_detail"></div>
+	        </div>
+	        Click an element to view details. &nbsp;View <a href="craft.html">t-shirt mock-up</a>.<br><br>
+
+	        <script>
+	            function my_function(element){
+	                var detail = '';
+	                for( x in element) {
+	                    if(typeof(element[x])=='object'){
+	                        detail += x + ' : ' + element[x].VALUE + ' ' + element[x].UNIT + '\n';
+	                    } else {
+	                        detail += x + ' : ' + element[x] + '\n';
+	                    }
+	                }
+	                alert(detail);
+	            }
+	            $('#my_periodic').pte({ data : 'json/jquery.pte.txt', config : {size:42,spacing:4}, clickHandler : my_function });
+	        </script>
+
+		</div>
+
+		<div id="rightColumn">
+
+				
+		</div>
+		<br>
+	</div>
+</div>
+
+<div id="footer-navigation">
+	<div style="float:left; color:#fff; margin:80px 0 0 15px">
+	<p>&copy; 2014 Team PlasmaTech</p>
+	</div>
+	<div style="float:right; margin-right:10px">
+		<a href="http://www.tagedonline.org/programs/web-challenge" target="tag"><img src="../img/logos/taged-logo.png" alt="TAG Ed" /></a>
+	</div>	
+</div>
+ 
+</body>
+</html>

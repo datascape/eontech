@@ -1,0 +1,77 @@
+#siteTitle {
+	font-size: 25pt;
+	padding:5px 15px 5px 0px;
+	margin-left:-8px;
+	display:block;
+	margin-bottom:20px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	border-radius: 8px;
+}
+#siteTitle:visited {
+	color:#555;
+}
+#siteTitle:link {
+	color:#555;
+}
+#siteTitle:hover {
+	color:#4f97c7;
+	color:#777;
+}
+.siteLogo {
+	font-size:24pt;
+	color:#4f97c7;
+}
+h1 {
+	color:#4f97c7;
+}
+#footer-navigation {
+	background: #aab43c;
+	overflow: hidden;
+}
+.footerColumn {
+	width:33%;
+	float:left;
+}
+.footerColumnInside {
+	padding-right:40px;
+}
+@media (max-width:700px) {
+	.footerColumn {
+		width:100%;
+	}
+}
+
+#main-nav li {
+	font-family: Cabin, Arial, sans-serif;
+	font-size: 16px;
+	font-weight: bold;
+	color:#333;
+	margin-right:3px;
+}
+#main-nav li a {
+	color:#556;
+	padding-left:12px;
+	padding-right:12px;
+}
+#main-nav li a:hover {
+	background-color:#fff;
+	color:#333;
+}
+#main-nav li a.active {
+	color:#fff;
+	background-color:orange;
+}
+
+/* Add to base */
+@media (max-width:750px) {
+	#main-nav li {
+		display: block; /* no effect */
+		float:left; /* no effect */
+		padding-bottom:12px;
+	}
+}
+
+.header-navigation {
+	z-index:1px;
+}
