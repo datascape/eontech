@@ -1,5 +1,5 @@
-# Eon.tech VR Gear
+# Eon.tech - VR Game Gear Club
 
-You are welcome to fork and extend the VR Gear store for your own local club.  
+Moved to:
 
-Any changes made must remain available for others to pull back into the common master pages.
+https://github.com/datascape/gamegear
