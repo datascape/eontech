@@ -1,0 +1,366 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE html PUBLIC "-//WAPFORUM//DTD XHTML Mobile 1.0//EN" "http://www.wapforum.org/DTD/xhtml-mobile10.dtd">
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ 	<meta charset="utf-8">
+ 	<meta http-equiv="Content-Type" content="text/html;">
+ 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Jump Technology - HyperWing - How it Works</title>
+	<link rel="shortcut icon" href="../img/logos/favicon.ico" />
+  <link href="../css/smartmenu.css" type="text/css" rel="stylesheet" >
+	<link href="../css/base.css" rel="stylesheet" type="text/css" >
+	<link href="../fonts/entypo/entypo.css" rel="stylesheet" id="style-resource-2">
+	<link href="../css/wing.css" rel="stylesheet" type="text/css" >
+
+   <script src="../js/jquery.min.js" type="text/javascript"></script>
+   <script src="../js/smartmenu.js"></script>
+
+	 <style type='text/css'>
+    
+  </style>
+</head>
+
+<body style="margin:0px">
+
+<div class="header-navigation" style="position:relative;height:100px">
+
+  <header class="" style="padding-top:10px;overflow:hidden;">
+	
+	<div style="position:absolute;">
+    <div style="margin-left:60px;min-height:12px">
+        <!--Jump Technology-->
+    </div>  
+
+    <div style='float:left;min-width:200px;margin-left:60px'>
+  		
+  		<div style="font-size:24px;padding:10px 0 10px 0">
+  	    	<a href="../home" style="color:#555"><img src="../img/logos/hyperwing-logo.png" style="max-width:150px" /></a>
+  		</div>
+		</div>
+
+      <div class='smartmenu smartmenu-responsive' style='float:left;z-index:99999;overflow:visible'>
+      <ul>
+         <li><a href='../evolve'><span>Evolution</span></a></li>
+         <li class='active has-sub'><a href='#'><span>Safety Features</span></a>
+            <ul>
+               <li><a href='../safety'><span>Propeller Safety Screens</span></a></li>
+               <li><a href='../safety'><span>Rotating Wiper Blades</span></a></li>
+               <li><a href='../safety'><span>In-Flight Battery Exchange</span></a></li>
+               <li><a href='../safety'><span>Extensive Flightways</span></a></li>
+               <li><a href='../safety'><span>Larger Capacity</span></a></li>
+               <li><a href='../safety'><span>Package Protection Guarentee</span></a></li>
+               <li><a href='../safety'><span>Printable Replacement Parts</span></a></li>
+               <li><a href='../safety'><span>Additional Parachute</span></a></li>
+            </ul>
+         </li>
+         <li class='has-sub'><a href='#' class="active"><span>How it works</span></a>
+            <ul>
+               <li><a href='../how'><span>Flight Stages</span></a></li>
+               <li><a href='../how#railgun'><span>Railgun Propulsion</span></a></li>
+               <li><a href='../how#energy'><span>Energy Usage</span></a></li>
+            </ul>
+         </li>
+         <li><a href='../impact'><span>Impact</span></a></li>
+         <li><a href='../careers'><span>Careers</span></a></li>
+         <li class='last'><a href='#'><span>Resources</span></a></li>
+      </ul>
+      </div>
+  </div>
+	
+  </header>
+</div>
+
+
+
+
+
+<div class="container">
+	<div class="main-content">
+
+
+
+		<div class="main">
+
+		    <h1>How It Will Work</h1>
+
+		    <h2>Energy Usage</h2>
+
+
+		</div>
+
+		<div class="right">
+			
+
+
+
+
+		</div>
+
+
+    <div style="clear:both"></div>
+
+    <!-- SPAN ALL -->
+
+
+          <!-- POWER
+          Source: http://www.rapidtables.com/calc/electric/watt-volt-amp-calculator.htm -->
+          
+
+          
+
+          <p>Elon Musk plans to apply several seconds of boost to each HyperLoop vehicle every 70 miles.</p>
+          
+          <p>"As of December 2010, the greatest known energy used to propel a projectile from a railgun was 33 megajoules" Source: <a href="http://www.wired.com/2010/12/video-navys-mach-8-railgun-obliterates-record/">Wired</a></p>
+
+          <p><span style="white-space:nowrap">Enter values</span> below to see how changing one value impacts the others.</p>
+
+          <style type="text/css">
+          .math {padding:0 10px 5px 10px;}
+          </style>
+          
+          <div style="border:1px solid #ccc;padding:10px;margin-bottom:20px;display:inline-block">
+          
+            <script src="../js/energy-calc.js"></script>
+            <form name="calcform">
+                <table class="calc">
+                  <tbody><tr>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Watts of Power (work done):</td>
+                  <td class="math"><input name="p" onclick="ondata(this)" onkeyup="ondata(this)" style="width:140px;" autofocus="" value="60"></td>
+                    <td>
+                    <select name="cp" class="mathsymbol" style="width:150px; padding:4px 0px;" onchange="onselchange(this, 3);">
+                      <option>micro-watts (μW)</option>
+                      <option>milli-watts (mW)</option>
+                      <option>watts (W)</option>
+                      <option>kilo-watts (kW)</option>
+                      <option selected="">mega-watts (MW)</option>
+                    </select>
+                    </td>
+                    <td class="mathsymbol">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Level of Voltage (pressure):</td>
+                  <td class="math"><input name="v" onclick="ondata(this)" onkeyup="ondata(this)" style="width:140px;"></td>
+                    <td>
+                    <select name="cv" class="mathsymbol" style="width:150px; padding:4px 0px;" onchange="onselchange(this, 2);">
+                      <option>micro-volts (μV)</option>
+                      <option>milli-volts (mV)</option>
+                      <option>volts (V)</option>
+                      <option selected="">kilo-volts (kV)</option>
+                      <option>mega-volts (MV)</option>
+                    </select>
+                    </td>
+                    <td class="mathsymbol">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Amps of Current (amount):</td>
+                  <td class="math"><input name="i" onclick="ondata(this)" onkeyup="ondata(this)" style="width:140px;"></td>
+                    <td>
+                    <select name="ci" class="mathsymbol" style="width:150px; padding:4px 0px;" onchange="onselchange(this, 1);">
+                      <option>micro-amps (μA)</option>
+                      <option>milli-amps (mA)</option>
+                      <option selected="">amps (A)</option>
+                      <option>kilo-amps (kA)</option>
+                      <option>mega-amps (MA)</option>
+                    </select>
+                    </td>
+                    <td class="mathsymbol">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Ohms of Resistance (a value):</td>
+                  <td class="math"><input name="r" onclick="ondata(this)" onkeyup="ondata(this)" style="width:140px;"></td>
+                    <td>
+                    <select name="cr" class="mathsymbol" style="width:150px; padding:4px 0px;" onchange="onselchange(this, 0);">
+                      <option selected="">ohms (Ω)</option>
+                      <option>kilo-ohms (kΩ)</option>
+                      <option>mega-ohms (MΩ)</option>
+                    </select>
+                    </td>
+                    <td class="mathsymbol">&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Time Boosted (in seconds):</td>
+                    <td class="math"><input name="t" onclick="ondata(this)" onkeyup="ondata(this)" style="width:140px;" value="5"></td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Joules (Watts divided by time in seconds):</td>
+                    <td class="math"><input name="j" onclick="ondata(this)" onkeyup="ondata(this)" style="width:140px;"></td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Arrival Speed (mph):</td>
+                    <td class="math"><input name="arrivespeed" onclick="ondata(this)" onkeyup="ondata(this)" style="width:140px;" value="150"></td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Departing Speed (mph):</td>
+                    <td class="math"><input name="departspeed" onclick="ondata(this)" onkeyup="ondata(this)" style="width:140px;" value="300"></td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Time to Next Boost (in minutes):</td>
+                    <td class="math"><input name="time-down-tube" onclick="ondata(this)" onkeyup="ondata(this)" style="width:140px;" value=""></td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Ending Speed (mph):</td>
+                    <td class="math"><input name="endspeed" onclick="ondata(this)" onkeyup="ondata(this)" style="width:140px;" value="150"></td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+
+                  <tr>
+                    <td>&nbsp;</td>
+                    <td>Total Distance Sent Down Tube:</td>
+                    <td class="math"><input name="distance" onclick="ondata(this)" onkeyup="ondata(this)" style="width:140px;" value=""></td>
+                    <td>&nbsp;</td>
+                    <td>&nbsp;</td>
+                  </tr>
+                  <tr>
+                    <td colspan="5">
+
+                    <a href="http://www.rapidtables.com/calc/electric/watt-volt-amp-calculator.htm" target="calc" style="float:right; margin-top:30px">code base</a>
+
+                    <input name="bcalc" onclick="calc()" type="button" value="Calculate" class="smartButton">&nbsp;
+                    <input type="reset" value="Reset" class="smartButton" style="background:#777"></td>
+                  </tr>
+                  
+                </tbody></table>
+              </form>
+
+              <script type="text/javascript">
+                <!--
+                var prevIndex=["0","2","2","2"]; 
+                
+                function oninit() {
+                  setfocus();
+                }
+                function setfocus() {
+                  document.calcform.r.focus();
+                }
+                function ondata(obj) {
+                  r = document.calcform.r.value;
+                  i = document.calcform.i.value;
+                  v = document.calcform.v.value;
+                  p = document.calcform.p.value;
+                  t = document.calcform.t.value;
+                  j = document.calcform.j.value;
+                  count = 0;
+                  if( r!="" ) count++;
+                  if( i!="" ) count++;
+                  if( v!="" ) count++;
+                  if( p!="" ) count++;
+                  if( j!="" ) count++;
+                  if( count<2 )
+                    document.calcform.bcalc.disabled=true;
+                  else
+                    document.calcform.bcalc.disabled=false;
+                  if( obj.value!="" ) return;
+                  if( count>=2 ) calc();
+                }
+                function onselchange(sel, i) {
+                  //alert("i="+i);
+                  //return;
+                  if( i==0 ) txt=document.calcform.r;
+                  else if( i==1 ) txt=document.calcform.i;
+                  else if( i==2 ) txt=document.calcform.v;
+                  else if( i==3 ) txt=document.calcform.p;
+                  else if( i==4 ) txt=document.calcform.t;
+                  else if( i==5 ) txt=document.calcform.j;
+                  if( txt.value=='' ) return;
+                  //alert(prevIndex[0]);
+                  di = sel.selectedIndex-prevIndex[i];
+                  //alert(di);
+                  txt.value = roundnum(txt.value/Math.pow(1000, di), 8);
+                  //alert(txt.value);
+                  prevIndex[i] = sel.selectedIndex;
+                  //calc();
+                }
+                function calc() {
+                  fr = Math.pow(10,3*document.calcform.cr.selectedIndex);
+                  fi = Math.pow(10,3*document.calcform.ci.selectedIndex-6);
+                  fv = Math.pow(10,3*document.calcform.cv.selectedIndex-6);
+                  fp = Math.pow(10,3*document.calcform.cp.selectedIndex-6);
+                  r = fr*document.calcform.r.value;
+                  i = fi*document.calcform.i.value;
+                  v = fv*document.calcform.v.value;
+                  p = fp*document.calcform.p.value;
+                  //t = ft*document.calcform.t.value;
+                  //j = fj*document.calcform.j.value;
+                  if( r!="" && v!="" ) {i=v/r; p=v*i;}
+                  else if( r!="" && i!="" ) {v=i*r; p=v*i;}
+                  else if( r!="" && p!="" ) {v=Math.sqrt(p*r); i=p/v;}
+                  else if( i!="" && v!="" ) {r=v/i; p=v*i;}
+                  else if( i!="" && p!="" ) {v=p/i; r=v/i;}
+                  else if( v!="" && p!="" ) {i=p/v; r=v/i;}
+                  r /= fr;
+                  i /= fi;
+                  v /= fv;
+                  p /= fp;
+                  var j = p/t;
+                  document.calcform.r.value = roundnum(r,8);
+                  document.calcform.i.value = roundnum(i,8);
+                  document.calcform.v.value = roundnum(v,8);
+                  document.calcform.p.value = roundnum(p,8);
+                  document.calcform.j.value = roundnum(j,8);
+                }
+                //-->
+                </script>
+          </div>
+
+          <p>Energy terms can be explained using a water analogy.<br><br></p>
+
+          <p><img src="../img/energy/watermetaphor.png" alt="" /><br>
+          Image source: <a href="http://www.khazar.com/academics/portal/ucsc/2010winter/art22/class02.php" target="water-energy">James Khazar</a><br></p>
+          
+          <!-- /POWER -->
+
+          <br>
+
+          <hr><br>
+          
+          <a href="../careers">Learn about Related Careers</a><br><br>
+
+    <!-- / SPAN ALL -->
+
+	</div>
+</div>
+
+
+        
+<div id="footer-navigation" style="clear:both">
+	<div style="float:left; color:#fff; margin:80px 0 0 15px">
+	<p>&copy; 2015 ANCS Middle School Robotics</p>
+	</div>
+	<div style="float:right; margin-right:10px">
+		<a href="http://www.tagedonline.org/middle-school-webchallenge/" target="tag"><img src="../img/logos/taged-logo.png" alt="TAG Ed" /></a>
+	</div>	
+</div>
+
+ 
+</body>
+</html>
