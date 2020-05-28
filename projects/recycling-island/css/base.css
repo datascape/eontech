@@ -212,7 +212,9 @@ h4 {
 
 .container {
   margin:0 auto; /* centers the content */
-  max-width: 900px;
+  max-width: 1200px;
+  padding-left:20px;
+  padding-right:20px;
 }
 .nav {
   list-style: none;
